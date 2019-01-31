@@ -1,0 +1,9 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	 
+    <aura:attribute name="recordId" type="String" />
+    <c:Opportunity_Edit_Form recordId="{!v.recordId}"
+                       sObjectName="Opportunity"
+                       sectionHeader="Opportunity Details"
+                       sectionfieldSetName="Clone_Opportunity_Field_Set"/>
+    
+</aura:component>
